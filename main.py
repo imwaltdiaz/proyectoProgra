@@ -9,7 +9,7 @@ def editarEncuesta(nombre, codigoCliente):
   if tipoDeEncuesta == "csat" or "CSAT":
     listObj = []
     # Cambiar test.json por csat.json
-    with open("test.json", encoding = "utf-8") as fp:
+    with open("csat.json", encoding = "utf-8") as fp:
       listObj = json.load(fp)
     listObj.append({
       "question": preguntaNueva,
@@ -19,7 +19,7 @@ def editarEncuesta(nombre, codigoCliente):
       },
       "level": dificultad
     })
-    with open("test.json", 'w', encoding = "utf-8") as json_file:
+    with open("csat.json", 'w', encoding = "utf-8") as json_file:
       json.dump(listObj, json_file, 
                         indent=2,  
                         separators=(',',':'))
@@ -28,7 +28,7 @@ def editarEncuesta(nombre, codigoCliente):
   elif tipoDeEncuesta == "bawr" or "BAWR":
     listObj = []
     # Cambiar test.json por csat.json
-    with open("test.json", encoding = "utf-8") as fp:
+    with open("bawr.json", encoding = "utf-8") as fp:
       listObj = json.load(fp)
     listObj.append({
       "question": preguntaNueva,
@@ -38,7 +38,7 @@ def editarEncuesta(nombre, codigoCliente):
       },
       "level": dificultad
     })
-    with open("test.json", 'w', encoding = "utf-8") as json_file:
+    with open("bawr.json", 'w', encoding = "utf-8") as json_file:
       json.dump(listObj, json_file, 
                         indent=2,  
                         separators=(',',':'))
@@ -47,7 +47,7 @@ def editarEncuesta(nombre, codigoCliente):
   elif tipoDeEncuesta == "psur" or "PSUR":
     listObj = []
     # Cambiar test.json por csat.json
-    with open("test.json", encoding = "utf-8") as fp:
+    with open("psur.json", encoding = "utf-8") as fp:
       listObj = json.load(fp)
     listObj.append({
       "question": preguntaNueva,
@@ -57,7 +57,7 @@ def editarEncuesta(nombre, codigoCliente):
       },
       "level": dificultad
     })
-    with open("test.json", 'w', encoding = "utf-8") as json_file:
+    with open("psur.json", 'w', encoding = "utf-8") as json_file:
       json.dump(listObj, json_file, 
                         indent=2,  
                         separators=(',',':'))
@@ -75,18 +75,18 @@ def resolverEncuesta(nombre,codigoCliente):
   # Resolver encuesta
   if tipoDeEncuesta == "csat" or "CSAT":
     # load to data from csat
-    with open('test.json') as json_file:
+    with open('csat.json') as json_file:
       data = json.load(json_file)
       
     
   elif tipoDeEncuesta == "bawr" or "BAWR":
     # load to data from bawr
-    with open('test.json') as json_file:
+    with open('bawr.json') as json_file:
       data = json.load(json_file)
       
   elif tipoDeEncuesta == "psur" or "PSUR":
    # load to data from psur
-    with open('test.json') as json_file:
+    with open('psur.json') as json_file:
       data = json.load(json_file)
       
   else: 
@@ -108,10 +108,10 @@ def resolverEncuesta(nombre,codigoCliente):
   resultados["encuestaRealizada"] = data
 
   
-  with open("testResults.json") as fp:
+  with open("results.json") as fp:
     listObj = json.load(fp)
     listObj.append(resultados)
-  with open("testResults.json", 'w') as json_file:
+  with open("results.json", 'w') as json_file:
     json.dump(listObj, json_file, 
                         indent=4,  
                         separators=(',',': '))
@@ -120,9 +120,9 @@ def resolverEncuesta(nombre,codigoCliente):
   
   
 def verResultados():
-   f = open("testResults.json")
+   f = open("results.json")
    data = json.load(f)
-   print(data)
+   
    # print(type(data[0]))
    key = "id"
    n = int(input("1: Desea ver resultados de un cliente en especifico.\n2: Desea ver una encuesta en particular\nElija: "))
