@@ -171,6 +171,26 @@
       },
       "respuesta": "await",
       "dificultad": 2
+    },
+    "TYPE TEXT NULL": {
+        "opciones": {
+          "a": "Miau",
+          "b": "Gato",
+          "c": "Perro",
+          "d": "Guau"
+        },
+      "respuesta": "await",
+      "dificultad": "NULL"
+    },
+    "TYPE TEXT NULL2": {
+        "opciones": {
+          "a": "Miau",
+          "b": "Gato",
+          "c": "Perro",
+          "d": "Guau"
+      },
+      "respuesta": "await",
+      "dificultad": "NULL"
     }
   },
   "CSAT": {
