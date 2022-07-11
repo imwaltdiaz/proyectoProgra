@@ -1,15 +1,17 @@
-{
-  "employees": [
-    { "name": "John Doe", "department": "Marketing", "place": "Remote" },
-    {
-      "name": "Jane Doe",
-      "department": "Software Engineering",
-      "place": "Remote"
+[{
+  "question": "Acá va la pregunta?",
+  "answers": {
+      "a": "Sí",
+      "b": "No"
     },
-    {
-      "name": "Don Joe",
-      "department": "Software Engineering",
-      "place": "Office"
-    }
-  ]
-}
+  "level": 3
+  },
+  {
+  "question": "Voy bien?",
+  "answers": {
+      "a": "Sí",
+      "b": "No"
+    },
+  "level": 2
+  }
+]
