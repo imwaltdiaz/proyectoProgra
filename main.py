@@ -69,9 +69,7 @@ def editarEncuesta(nombre, codigoCliente):
 
 def resolverEncuesta(nombre,codigoCliente):
   tipoDeEncuesta = str(input("Seleccione tipo de encuesta a editar BAWR - CSAT - PSUR: "))
-  n = int(input("Ingrese numero de encuestas de este tipo a resolver: "))
-  #orden = int(input("Orden ascendende: 1\nOrden descendente 2:\n Dificultad en orden: "))
-  # sort(orden, lista ,nombre)
+  # falta preguntar por repetir n veces la encuesta
   idAsignado = random.randint(10000,20000)
   print("se le ha asignado el id: ", idAsignado)
   # Resolver encuesta
@@ -95,47 +93,53 @@ def resolverEncuesta(nombre,codigoCliente):
     print("Ingrese una opción válida por favor")
     editarEncuesta(nombre,codigoCliente)
   
+
   for i in range(len(data)):
     print(data[i]["question"])
     print(data[i]["answers"])
-    rspt = str(input("Ingrese su respuesta: "))
+    rspt = str(input("Ingrese respuesta: "))
+    data[i]["respuestaSeleccionada"] = rspt
 
-    # Cambiar test.json por csat.json
-    with open("exampleRes.json", encoding = "utf-8") as fp:
-      resultadoEncuesta = json.load(fp)
-    # where the problem relies, appending to resultadoEncuesta
-    resultadoEncuesta.append({
-      "cliente": nombre,
-      "encuestasRealizadas":[{
-        "tipo": tipoDeEncuesta,
-        "fecha": "no",
-        "results": [
-          {
-            "question": data[i]["question"],
-            "answers": data[i]["answers"],
-            "respuestaSeleccionada": rspt
-          }
-        ]
-      }]
-    })
-    with open("exampleRes.json", 'w', encoding = "utf-8") as json_file:
-      json.dump(resultadoEncuesta, json_file, 
-                        indent=2,  
-                        separators=(',',':'))
+  resultados = {
+    "nombre": nombre,
+    "id":  idAsignado,
+    "tipo": tipoDeEncuesta
+  }
+  resultados["encuestaRealizada"] = data
+
+  
+  with open("testResults.json") as fp:
+    listObj = json.load(fp)
+    listObj.append(resultados)
+  with open("testResults.json", 'w') as json_file:
+    json.dump(listObj, json_file, 
+                        indent=4,  
+                        separators=(',',': '))
+ 
     
   
   
 def verResultados():
-   f = open("results.json")
+   f = open("testResults.json")
    data = json.load(f)
-   n = int(input("1: Desea ver resultados de un cliente en especifico.\n2: Desea ver una encuesta en particular "))
+   print(data)
+   # print(type(data[0]))
+   key = "id"
+   n = int(input("1: Desea ver resultados de un cliente en especifico.\n2: Desea ver una encuesta en particular\nElija: "))
+   
    if n == 1:
     tipoDeEncuesta = str(input("Seleccione tipo de encuesta a buscar BAWR - CSAT - PSUR: "))
+    key = "nombre"
     codigoDeCliente = int(input("Ingrese codigo de cliente: "))
-    idAsignado = int(input("Ingrese id: "))
-    pass
+    nombreAsignado = str(input("Ingrese nombre: "))
+    encontrado = next(filter(lambda encontrado:encontrado.get(key) == nombreAsignado, data))
+    print(encontrado)
    elif n == 2:
+    key = "id"
     nombre = str(input("Ingrese id de la encuesta"))
+    idAsignado = int(input("Ingrese id: "))
+    encontrado = next(filter(lambda encontrado:encontrado.get(key) == idAsignado, data))
+    print(encontrado)
 
 
 # Sort de emergencia:
