@@ -69,22 +69,59 @@ def editarEncuesta(nombre, codigoCliente):
 
 def resolverEncuesta(nombre,codigoCliente):
   tipoDeEncuesta = str(input("Seleccione tipo de encuesta a editar BAWR - CSAT - PSUR: "))
-  n = int(input("Ingrese numero de encuestas de este tipo a resolver"))
+  n = int(input("Ingrese numero de encuestas de este tipo a resolver: "))
   #orden = int(input("Orden ascendende: 1\nOrden descendente 2:\n Dificultad en orden: "))
   # sort(orden, lista ,nombre)
   idAsignado = random.randint(10000,20000)
   print("se le ha asignado el id: ", idAsignado)
   # Resolver encuesta
   if tipoDeEncuesta == "csat" or "CSAT":
+    # load to data from csat
+    with open('test.json') as json_file:
+      data = json.load(json_file)
+      
     
   elif tipoDeEncuesta == "bawr" or "BAWR":
-    
+    # load to data from bawr
+    with open('test.json') as json_file:
+      data = json.load(json_file)
+      
   elif tipoDeEncuesta == "psur" or "PSUR":
-   
+   # load to data from psur
+    with open('test.json') as json_file:
+      data = json.load(json_file)
+      
   else: 
     print("Ingrese una opción válida por favor")
     editarEncuesta(nombre,codigoCliente)
-  for i in range (0,n):
+  
+  for i in range(len(data)):
+    print(data[i]["question"])
+    print(data[i]["answers"])
+    rspt = str(input("Ingrese su respuesta: "))
+
+    # Cambiar test.json por csat.json
+    with open("exampleRes.json", encoding = "utf-8") as fp:
+      resultadoEncuesta = json.load(fp)
+    # where the problem relies, appending to resultadoEncuesta
+    resultadoEncuesta.append({
+      "cliente": nombre,
+      "encuestasRealizadas":[{
+        "tipo": tipoDeEncuesta,
+        "fecha": "no",
+        "results": [
+          {
+            "question": data[i]["question"],
+            "answers": data[i]["answers"],
+            "respuestaSeleccionada": rspt
+          }
+        ]
+      }]
+    })
+    with open("exampleRes.json", 'w', encoding = "utf-8") as json_file:
+      json.dump(resultadoEncuesta, json_file, 
+                        indent=2,  
+                        separators=(',',':'))
     
   
   
@@ -117,8 +154,10 @@ def main():
   opcion = int(input("\nOpcion 1: Editar encuesta\nOpcion 2: Resolver encuesta\nOpcion 3: Ver resultados\n\nOpcion: "))
   if opcion == 1:
     editarEncuesta(nombre,codigoCliente)
+    # this is solved
   elif opcion == 2:
     resolverEncuesta(nombre,codigoCliente)
+    #this is what a i want to fix
   elif opcion == 3:
     verResultados()
 main()
