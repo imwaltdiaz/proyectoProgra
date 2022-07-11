@@ -5,37 +5,62 @@ def editarEncuesta(nombre, codigoCliente):
   tipoDeEncuesta = str(input("\nSeleccione tipo de encuesta a editar BAWR - CSAT - PSUR: "))
   preguntaNueva = str(input("\nIngrese nueva pregunta: "))
   dificultad = int(input("\nIngrese dificultad (1 Menor - 5 Mayor): "))
-  # orden = int(input("\nOrden ascendende: 1\nOrden descendente 2:\n Orden: "))
-  # encuestaOrdenada = sort(orden, )
-  dicc = {}
-  # terminar por añadir al json
-  # crear diccionario igual al json 
+  
   if tipoDeEncuesta == "csat" or "CSAT":
-    # data = json.load('test.json')
-    # data[preguntaNueva] = 'value'
-    # json.dump('csat.json', data)
-    # with open("csat.json", "r+") as f:
-    #   data = json.load(f.read())
-    #   data[preguntaNueva] = "bang"
-    
-    #f = open("csat.json","a")
-    #dicc.setdefault("pregunta",preguntaNueva)
-    #dicc.setdefault("dificultad",dificultad)
-    #f.write(dicc)
-    # encuestaOrdenada
+    listObj = []
+    # Cambiar test.json por csat.json
+    with open("test.json", encoding = "utf-8") as fp:
+      listObj = json.load(fp)
+    listObj.append({
+      "question": preguntaNueva,
+      "answers": {
+        "a": "si",
+        "b": "no"
+      },
+      "level": dificultad
+    })
+    with open("test.json", 'w', encoding = "utf-8") as json_file:
+      json.dump(listObj, json_file, 
+                        indent=2,  
+                        separators=(',',':'))
+
     print("Su pregunta ha sido agregada correctamente")
   elif tipoDeEncuesta == "bawr" or "BAWR":
-    f = open("bawr.json","a")
-    dicc.setdefault("pregunta",preguntaNueva)
-    dicc.setdefault("dificultad",dificultad)
-    f.write(dicc)
+    listObj = []
+    # Cambiar test.json por csat.json
+    with open("test.json", encoding = "utf-8") as fp:
+      listObj = json.load(fp)
+    listObj.append({
+      "question": preguntaNueva,
+      "answers": {
+        "a": "si",
+        "b": "no"
+      },
+      "level": dificultad
+    })
+    with open("test.json", 'w', encoding = "utf-8") as json_file:
+      json.dump(listObj, json_file, 
+                        indent=2,  
+                        separators=(',',':'))
     # encuestaOrdenada
     print("Su pregunta ha sido agregada correctamente")
   elif tipoDeEncuesta == "psur" or "PSUR":
-    f = open("psur.json","a")
-    dicc.setdefault("pregunta",preguntaNueva)
-    dicc.setdefault("dificultad",dificultad)
-    f.write(dicc)
+    listObj = []
+    # Cambiar test.json por csat.json
+    with open("test.json", encoding = "utf-8") as fp:
+      listObj = json.load(fp)
+    listObj.append({
+      "question": preguntaNueva,
+      "answers": {
+        "a": "si",
+        "b": "no"
+      },
+      "level": dificultad
+    })
+    with open("test.json", 'w', encoding = "utf-8") as json_file:
+      json.dump(listObj, json_file, 
+                        indent=2,  
+                        separators=(',',':'))
     # encuestaOrdenada
     print("Su pregunta ha sido agregada correctamente")
   else: 
@@ -93,18 +118,6 @@ def resolverEncuesta(nombre,codigoCliente):
                   resppsur.append(resp)
           print("Gracias por responder")
           csat.close() 
-  # Mostrar las preguntas 
-  #with open('sample.json', 'r') as openfile:
-    # Reading from json file
-    #jsonDict = json.load(openfile)
-    #for i in jsonDict[tipoDeEncuesta]:
-      #for key, value in mydic.iteritems():
-        #print (key, value)
-  #Lo de abajo es para guardar resultados
-  #resultados = json.dumps(results)
-  #f = open("dict.json","w")
-  #f.write(resultados)
-  #f.close()
 
   
 def verResultados():
