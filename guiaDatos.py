@@ -1,18 +1,9 @@
+import json
 def main():
-  test = [{
-    "nombre":1,
-    "codigo":2,
-    "random":3,
-    "tipoDeEncuesta": 4
-  },{
-    "id":2
-  }]
-
-  cliente = 205
   test2 = {
     "cocaCola": {
       "encuesta 1": {
-        id: 53,
+        "id": 53,
         "tipo": "csat",
         "resultados": {
           "Pregunta 1": {
@@ -30,23 +21,23 @@ def main():
         }
       },  
       "encuesta 2": {
-        id: 22,
+        "id": 22,
         "tipo": "bawr",
         "resultados": {
-          "Pregunta 1": "Respuesta 1"
+          "Te gusta el pan": "a"
         }
       }
     },
     "Pepsi": {
       "encuesta 1": {
-        id: 54,
+        "id": 54,
         "tipo": "psur",
         "resultados": {
           "Pregunta 1": "Respuesta 1"
         }
       },
       "encuesta 2": {
-        id: 54,
+        "id": 54,
         "tipo": "csat",
         "resultados": {
           "Pregunta 1": "Respuesta 1"
@@ -54,13 +45,8 @@ def main():
         }
       },
   }
-  # fiu = test2["cocaCola"]
-  # print(fiu)
-  bang = sorted(test2["cocaCola"], key=lambda x: (test2["cocaCola"][x][id]))
-  orden = bang
-  mayor = orden[0]
-  print(test2["cocaCola"][mayor])
-  # print(orden)
-  # print(test2["cocaCola"]["encuesta 1"][id])
-  # print(bang)
+  bang = json.dumps(test2)
+  f = open("dict.json","w")
+  f.write(bang)
+  f.close()
 main()

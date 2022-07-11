@@ -1,0 +1,186 @@
+{
+  "BAWR": {
+    "¿Cuál de los siguientes productos has probado?": {
+      "opciones": {
+        "a": "Miau",
+        "b": "Gato",
+        "c": "Perro",
+        "d": "Guau"
+      },
+      "respuesta": "await",
+      "dificultad": 5
+    },
+    "¿Cuando piensa en este producto, ¿qué marca le viene a la mente?": {
+      "opciones": {
+        "a": "Miau",
+        "b": "Gato",
+        "c": "Perro",
+        "d": "Guau"
+      },
+      "respuesta": "await",
+      "dificultad": 2
+    },
+    "¿Puedes recordar la última vez que usaste esta categoría de producto?": {
+      "opciones": {
+        "a": "Miau",
+        "b": "Gato",
+        "c": "Perro",
+        "d": "Guau"
+      },
+      "respuesta": "await",
+      "dificultad": 3
+    },
+    "¿De cuántas marcas has oído hablar antes? (Seleccione todas las que correspondan)": {
+      "opciones": {
+        "a": "Miau",
+        "b": "Gato",
+        "c": "Perro",
+        "d": "Guau"
+      },
+      "respuesta": "await",
+      "dificultad": 1
+    },
+    "¿Has oído hablar de la marca ... antes?": {
+      "opciones": {
+        "a": "Miau",
+        "b": "Gato",
+        "c": "Perro",
+        "d": "Guau"
+      },
+      "respuesta": "await",
+      "dificultad": 2
+    },
+    "¿Dónde has visto o escuchado sobre nuestra marca  recientemente? (Seleccione todas las que correspondan)": {
+      "opciones": {
+        "a": "Miau",
+        "b": "Gato",
+        "c": "Perro",
+        "d": "Guau"
+      },
+      "respuesta": "await",
+      "dificultad": 1
+    },
+    "¿En los últimos días, ¿con qué frecuencia ha escuchado a personas hablar sobre nuestra marca?": {
+      "opciones": {
+        "a": "Miau",
+        "b": "Gato",
+        "c": "Perro",
+        "d": "Guau"
+      },
+      "respuesta": "await",
+      "dificultad": 5
+    },
+    "¿Has comprado nuestro producto antes?": {
+      "opciones": {
+        "a": "Miau",
+        "b": "Gato",
+        "c": "Perro",
+        "d": "Guau"
+      },
+      "respuesta": "await",
+      "dificultad": 3
+    },
+    "¿Cómo fue tu experiencia con el producto?": {
+      "opciones": {
+        "a": "Miau",
+        "b": "Gato",
+        "c": "Perro",
+        "d": "Guau"
+      },
+      "respuesta": "await",
+      "dificultad": 2
+    },
+    "¿En una escala del 1 al 10, ¿qué posibilidades hay de que recomiende nuestra marca a un amigo o colega? 0 Muy improbable to 10 Muy probable? ": {
+      "opciones": {
+        "a": "Miau",
+        "b": "Gato",
+        "c": "Perro",
+        "d": "Guau"
+      },
+      "respuesta": "await",
+      "dificultad": 4
+    }
+  },
+  "PSUR": {
+    "¿Conoces bien a el-nombre-del-producto?": {
+      "opciones": {
+        "a": "Miau",
+        "b": "Gato",
+        "c": "Perro",
+        "d": "Guau"
+      },
+      "respuesta": "await",
+      "dificultad": 1
+    },
+    "Si supieras que el precio de producto era precio, cuánto pagarías más o menos por conseguirlo?": {
+      "opciones": {
+        "a": "Miau",
+        "b": "Gato",
+        "c": "Perro",
+        "d": "Guau"
+      },
+      "respuesta": "await",
+      "dificultad": 2
+    },
+    "¿Cuánto dinero estarías dispuesto a pagar por el producto?": {
+      "opciones": {
+        "a": "Miau",
+        "b": "Gato",
+        "c": "Perro",
+        "d": "Guau"
+      },
+      "respuesta": "await",
+      "dificultad": 5
+    },
+    "¿Consideras que el precio es el adecuado para el producto/servicio que ofrecemos?": {
+      "opciones": {
+        "a": "Miau",
+        "b": "Gato",
+        "c": "Perro",
+        "d": "Guau"
+      },
+      "respuesta": "await",
+      "dificultad": 3
+    },
+    "¿Existe relación entre el precio y la calidad del producto/servicio?": {
+      "opciones": {
+        "a": "Miau",
+        "b": "Gato",
+        "c": "Perro",
+        "d": "Guau"
+      },
+      "respuesta": "await",
+      "dificultad": 4
+    },
+    "¿Pagarías un precio adicional por más funcionalidades del servicio?": {
+      "opciones": {
+        "a": "Miau",
+        "b": "Gato",
+        "c": "Perro",
+        "d": "Guau"
+      },
+      "respuesta": "await",
+      "dificultad": 1
+    },
+    "¿Cuánto estarías dispuesto a pagar por nuestro producto?": {
+      "opciones": {
+        "a": "Miau",
+        "b": "Gato",
+        "c": "Perro",
+        "d": "Guau"
+      },
+      "respuesta": "await",
+      "dificultad": 2
+    }
+  },
+  "CSAT": {
+    " ¿Que tan satisfecho se encuentra de la empresa en general?": {
+      "opciones": {
+        "a": "Miau",
+        "b": "Gato"
+      },
+      "respuesta": "await",
+      "dificultad": 4
+    }
+  }
+}
