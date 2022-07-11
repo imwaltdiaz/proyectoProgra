@@ -1,18 +1,27 @@
-[{
-  "question": "Acá va la pregunta?",
-  "answers": {
-      "a": "Sí",
-      "b": "No"
+[
+  {
+    "question":"Ac\u00e1 va la pregunta?",
+    "answers":{
+      "a":"S\u00ed",
+      "b":"No"
     },
-  "level": 3,
-  "respuestaSeleccionada": "a"
+    "level":3,
+    "respuestaSeleccionada":"a"
   },
   {
-  "question": "Voy bien?",
-  "answers": {
-      "a": "Sí",
-      "b": "No"
+    "question":"Voy bien?",
+    "answers":{
+      "a":"S\u00ed",
+      "b":"No"
     },
-  "level": 2
+    "level":2
+  },
+  {
+    "question":"dices siuu? ",
+    "answers":{
+      "a":"si",
+      "b":"no"
+    },
+    "level":2
   }
 ]
