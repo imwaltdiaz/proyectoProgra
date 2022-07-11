@@ -68,57 +68,25 @@ def editarEncuesta(nombre, codigoCliente):
     editarEncuesta(nombre,codigoCliente)
 
 def resolverEncuesta(nombre,codigoCliente):
-  respcsat = []
-  respbawr = []
-  resppsur = []
-  csat = open("csat.json", "r")
-  bawr = open("bawr.json", "r")
-  psur = open("psur.json", "r")
   tipoDeEncuesta = str(input("Seleccione tipo de encuesta a editar BAWR - CSAT - PSUR: "))
-  n = int(input("Ingrese numero de encuestas de este tipo a resolver: "))
+  n = int(input("Ingrese numero de encuestas de este tipo a resolver"))
   #orden = int(input("Orden ascendende: 1\nOrden descendente 2:\n Dificultad en orden: "))
-  #sort(orden, lista ,nombre)
+  # sort(orden, lista ,nombre)
   idAsignado = random.randint(10000,20000)
   print("se le ha asignado el id: ", idAsignado)
-  for i in range(n):  
-      if tipoDeEncuesta == "CSAT" or "csat":
-        print("\nSeleccionaste la encuesta CSAT\n")
-        for linea in csat:
-            linea = linea.strip()
-            palabras = linea.split(",")
-            for i in range(0, len(palabras)):
-                print(palabras[i])
-            for j in range(0, 1):
-                resp = str(input("\nIngresa tu respuesta: "))
-                respcsat.append(resp)
-        print("Gracias por responder")
-        return respcsat
-        csat.close()
-      elif tipoDeEncuesta == "BAWR" or "bawr":
-          print("\nSeleccionaste la encuesta BAWR\n")
-          for linea in bawr:
-              linea = linea.strip()
-              palabras = linea.split(",")
-              for i in range(0, len(palabras)):
-                  print(palabras[i])
-              for j in range(0, 1):
-                    resp = str(input("\nIngresa tu respuesta:\n"))
-                    respbawr.append(resp)
-          print("Gracias por responder")
-          csat.close()
-      elif tipoDeEncuesta == "PSUR" or "psur":
-          print("\nSeleccionaste la encuesta PSUR\n")
-          for linea in psur:
-              linea = linea.strip()
-              palabras = linea.split(",")
-              for i in range(0, len(palabras)):
-                  print(palabras[i])
-              for j in range(0, 1):
-                  resp = str(input("\nIngresa tu respuesta: "))
-                  resppsur.append(resp)
-          print("Gracias por responder")
-          csat.close() 
-
+  # Resolver encuesta
+  if tipoDeEncuesta == "csat" or "CSAT":
+    
+  elif tipoDeEncuesta == "bawr" or "BAWR":
+    
+  elif tipoDeEncuesta == "psur" or "PSUR":
+   
+  else: 
+    print("Ingrese una opción válida por favor")
+    editarEncuesta(nombre,codigoCliente)
+  for i in range (0,n):
+    
+  
   
 def verResultados():
    f = open("results.json")
