@@ -1,0 +1,31 @@
+[{
+  "cliente": "cocaCola",
+  "encuestasRealizadas": {
+    "encuesta1": {
+      "tipo": "csat",
+      "fecha": "hoy",
+      "results": [{
+    "question": "Acá va la pregunta?",
+    "answers": {
+      "a": "Sí",
+      "b": "No"
+    },
+  "level": 3,
+  "respuestaSeleccionada": "a"
+  },
+  {
+  "question": "Voy bien?",
+  "answers": {
+      "a": "Sí",
+      "b": "No"
+    },
+  "level": 2
+  }]
+    },
+    "encuesta2": {
+      "tipo": "bawr",
+      "fecha": "mañana"
+    }
+  }
+}  
+]

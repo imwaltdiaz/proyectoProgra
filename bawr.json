@@ -1,0 +1,98 @@
+[
+  {
+    "question":"¿Cuál de los siguientes productos has probado?",
+    "answers":{
+      "a":"Celestin",
+      "b":"Diet",
+      "c":"Extra azucar",
+      "d":"Integral"
+    },
+    "level":5
+  },
+  {
+    "question":"¿Cuando piensa en este producto, ¿qué marca le viene a la mente??",
+    "answers":{
+      "a":"S\u00ed",
+      "b":"No"
+    },
+    "level":2
+  },
+  {
+    "question":"¿Puedes recordar la última vez que usaste esta categoría de producto?",
+    "answers":{
+      "a":"si",
+      "b":"no"
+    },
+    "level":3
+  },
+   {
+    "question":"¿De cuántas marcas has oído hablar antes? (Seleccione todas las que correspondan)?",
+    "answers":{
+      "a":"S\u00ed",
+      "b":"No",
+      "c":"S\u00ed",
+      "d":"No"
+    },
+    "level":1
+  },
+   {
+    "question":"¿Has oído hablar de la marca ... antes?",
+    "answers":{
+      "a":"S\u00ed",
+      "b":"No",
+      "c":"S\u00ed",
+      "d":"No"
+    },
+    "level":2
+  },
+   {
+    "question":"¿Dónde has visto o escuchado sobre nuestra marca  recientemente? (Seleccione todas las que correspondan)?",
+    "answers":{
+      "a":"S\u00ed",
+      "b":"No",
+      "c":"S\u00ed",
+      "d":"No"
+    },
+    "level":1
+  },
+   {
+    "question":"¿En los últimos días, ¿con qué frecuencia ha escuchado a personas hablar sobre nuestra marca?",
+    "answers":{
+      "a":"S\u00ed",
+      "b":"No",
+      "c":"S\u00ed",
+      "d":"No"
+    },
+    "level":5
+  },
+   {
+    "question":"¿Has comprado nuestro producto antes?",
+    "answers":{
+      "a":"S\u00ed",
+      "b":"No",
+      "c":"S\u00ed",
+      "d":"No"
+    },
+    "level":3
+  },
+   {
+    "question":"¿Cómo fue tu experiencia con el producto?",
+    "answers":{
+      "a":"S\u00ed",
+      "b":"No",
+      "c":"S\u00ed",
+      "d":"No"
+    },
+    "level":2
+  },
+   {
+    "question":"¿En una escala del 1 al 10, ¿qué posibilidades hay de que recomiende nuestra marca a un amigo o colega? 0 Muy improbable to 10 Muy probable? ",
+    "answers":{
+      "a":"S\u00ed",
+      "b":"No",
+      "c":"S\u00ed",
+      "d":"No"
+    },
+    "level":4
+  }
+]

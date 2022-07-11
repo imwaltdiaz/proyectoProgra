@@ -1,0 +1,70 @@
+[
+  {
+    "question":"¿Conoces bien a el-nombre-del-producto?",
+    "answers":{
+      "a":"S\u00ed",
+      "b":"No",
+      "c":"S\u00ed",
+      "d":"No"
+    },
+    "level":1
+  },
+  {
+    "question":"Si supieras que el precio de producto era precio, cuánto pagarías más o menos por conseguirlo?",
+    "answers":{
+      "a":"S\u00ed",
+      "b":"No",
+      "c":"S\u00ed",
+      "d":"No"
+    },
+    "level":2
+  },
+  {
+    "question":"¿Cuánto dinero estarías dispuesto a pagar por el producto?",
+    "answers":{
+      "a":"si",
+      "b":"no"
+    },
+    "level":5
+  },
+   {
+    "question":"¿Consideras que el precio es el adecuado para el producto/servicio que ofrecemos?",
+    "answers":{
+      "a":"S\u00ed",
+      "b":"No",
+      "c":"S\u00ed",
+      "d":"No"
+    },
+    "level":3
+  },
+   {
+    "question":"¿Existe relación entre el precio y la calidad del producto/servicio?",
+    "answers":{
+      "a":"S\u00ed",
+      "b":"No",
+      "c":"S\u00ed",
+      "d":"No"
+    },
+    "level":4
+  },
+   {
+    "question":"¿Pagarías un precio adicional por más funcionalidades del servicio?",
+    "answers":{
+      "a":"S\u00ed",
+      "b":"No",
+      "c":"S\u00ed",
+      "d":"No"
+    },
+    "level":1
+  },
+   {
+    "question":"¿Cuánto estarías dispuesto a pagar por nuestro producto?",
+    "answers":{
+      "a":"S\u00ed",
+      "b":"No",
+      "c":"S\u00ed",
+      "d":"No"
+    },
+    "level":2
+  }
+]

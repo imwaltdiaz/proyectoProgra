@@ -1,0 +1,100 @@
+[
+    {
+        "nombre": "walt",
+        "id": 10456,
+        "encuestaRealizada": [
+            {
+                "question": "Ac\u00e1 va la pregunta?",
+                "answers": {
+                    "a": "S\u00ed",
+                    "b": "No"
+                },
+                "level": 3,
+                "respuestaSeleccionada": "a"
+            },
+            {
+                "question": "Voy bien?",
+                "answers": {
+                    "a": "S\u00ed",
+                    "b": "No"
+                },
+                "level": 2,
+                "respuestaSeleccionada": "b"
+            }
+        ]
+    },
+    {
+        "nombre": "andrew",
+        "id": 12783,
+        "encuestaRealizada": [
+            {
+                "question": "Ac\u00e1 va la pregunta?",
+                "answers": {
+                    "a": "S\u00ed",
+                    "b": "No"
+                },
+                "level": 3,
+                "respuestaSeleccionada": "b"
+            },
+            {
+                "question": "Voy bien?",
+                "answers": {
+                    "a": "S\u00ed",
+                    "b": "No"
+                },
+                "level": 2,
+                "respuestaSeleccionada": "b"
+            }
+        ]
+    },
+    {
+        "nombre": "walt",
+        "id": 11703,
+        "tipo": "bawr",
+        "encuestaRealizada": [
+            {
+                "question": "Ac\u00e1 va la pregunta?",
+                "answers": {
+                    "a": "S\u00ed",
+                    "b": "No"
+                },
+                "level": 3,
+                "respuestaSeleccionada": "b"
+            },
+            {
+                "question": "Voy bien?",
+                "answers": {
+                    "a": "S\u00ed",
+                    "b": "No"
+                },
+                "level": 2,
+                "respuestaSeleccionada": "c"
+            }
+        ]
+    },
+    {
+        "nombre": "walt",
+        "id": 11804,
+        "tipo": "bawr",
+        "encuestaRealizada": [
+            {
+                "question": "Ac\u00e1 va la pregunta?",
+                "answers": {
+                    "a": "S\u00ed",
+                    "b": "No"
+                },
+                "level": 3,
+                "respuestaSeleccionada": "b"
+            },
+            {
+                "question": "Voy bien?",
+                "answers": {
+                    "a": "S\u00ed",
+                    "b": "No"
+                },
+                "level": 2,
+                "respuestaSeleccionada": "b"
+            }
+        ]
+    }
+]
