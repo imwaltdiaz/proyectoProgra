@@ -131,5 +131,350 @@
                 "respuestaSeleccionada": "a"
             }
         ]
+    },
+    {
+        "nombre": "Walt",
+        "id": 15482,
+        "tipo": "Bawr",
+        "encuestaRealizada": [
+            {
+                "question": "\u00bfQue tan satisfecho se encuentra de la empresa en general?",
+                "answers": {
+                    "a": "S\u00ed",
+                    "b": "No",
+                    "c": "S\u00ed",
+                    "d": "No"
+                },
+                "level": 2,
+                "respuestaSeleccionada": "a"
+            },
+            {
+                "question": "\u00bfCual es su opini\u00f3n respecto a la limpieza del local?",
+                "answers": {
+                    "a": "S\u00ed",
+                    "b": "No",
+                    "c": "S\u00ed",
+                    "d": "No"
+                },
+                "level": 3,
+                "respuestaSeleccionada": "a"
+            },
+            {
+                "question": "\u00bfCuan probable es que se recomiende nuestros productos?",
+                "answers": {
+                    "a": "si",
+                    "b": "no"
+                },
+                "level": 3,
+                "respuestaSeleccionada": "a"
+            },
+            {
+                "question": "\u00bfComo calificarias la calidad de atenci\u00f3n de nuestros trabajadores para resolver sus dudas?",
+                "answers": {
+                    "a": "S\u00ed",
+                    "b": "No",
+                    "c": "S\u00ed",
+                    "d": "No"
+                },
+                "level": 4,
+                "respuestaSeleccionada": "a"
+            },
+            {
+                "question": "\u00bfLa persona que le ha atendido ha comprendido sus necesidades?",
+                "answers": {
+                    "a": "S\u00ed",
+                    "b": "No",
+                    "c": "S\u00ed",
+                    "d": "No"
+                },
+                "level": 4,
+                "respuestaSeleccionada": "a"
+            },
+            {
+                "question": "\u00bfCuan probable es que vuelva a utilizar nuestros servicios o productos?",
+                "answers": {
+                    "a": "S\u00ed",
+                    "b": "No",
+                    "c": "S\u00ed",
+                    "d": "No"
+                },
+                "level": 3,
+                "respuestaSeleccionada": "a"
+            },
+            {
+                "question": "\u00bfCu\u00e1l es la calidad de la informaci\u00f3n sobre nuestros productos?",
+                "answers": {
+                    "a": "S\u00ed",
+                    "b": "No",
+                    "c": "S\u00ed",
+                    "d": "No"
+                },
+                "level": 5,
+                "respuestaSeleccionada": "a"
+            },
+            {
+                "question": "\u00bfQu\u00e9 le ha parecido la relaci\u00f3n entre la calidad ofrecida y el precio?",
+                "answers": {
+                    "a": "S\u00ed",
+                    "b": "No",
+                    "c": "S\u00ed",
+                    "d": "No"
+                },
+                "level": 5,
+                "respuestaSeleccionada": "a"
+            },
+            {
+                "question": "Si piensa en productos o servicios parecidos, \u00bfqu\u00e9 nota le pondr\u00eda a nuestra marca?",
+                "answers": {
+                    "a": "S\u00ed",
+                    "b": "No",
+                    "c": "S\u00ed",
+                    "d": "No"
+                },
+                "level": 2,
+                "respuestaSeleccionada": "a"
+            },
+            {
+                "question": "\u00bfHa tenido alg\u00fan problema en el proceso de compra?",
+                "answers": {
+                    "a": "S\u00ed",
+                    "b": "No",
+                    "c": "S\u00ed",
+                    "d": "No"
+                },
+                "level": 1,
+                "respuestaSeleccionada": "a"
+            }
+        ]
+    },
+    {
+        "nombre": "walt",
+        "id": 13092,
+        "tipo": "bawr",
+        "encuestaRealizada": [
+            {
+                "question": "\u00bfQue tan satisfecho se encuentra de la empresa en general?",
+                "answers": {
+                    "a": "S\u00ed",
+                    "b": "No",
+                    "c": "S\u00ed",
+                    "d": "No"
+                },
+                "level": 2,
+                "respuestaSeleccionada": "/bin/python3 /home/walter/ulima/proyectoProgra/main.py"
+            },
+            {
+                "question": "\u00bfCual es su opini\u00f3n respecto a la limpieza del local?",
+                "answers": {
+                    "a": "S\u00ed",
+                    "b": "No",
+                    "c": "S\u00ed",
+                    "d": "No"
+                },
+                "level": 3,
+                "respuestaSeleccionada": "a"
+            },
+            {
+                "question": "\u00bfCuan probable es que se recomiende nuestros productos?",
+                "answers": {
+                    "a": "si",
+                    "b": "no"
+                },
+                "level": 3,
+                "respuestaSeleccionada": "a"
+            },
+            {
+                "question": "\u00bfComo calificarias la calidad de atenci\u00f3n de nuestros trabajadores para resolver sus dudas?",
+                "answers": {
+                    "a": "S\u00ed",
+                    "b": "No",
+                    "c": "S\u00ed",
+                    "d": "No"
+                },
+                "level": 4,
+                "respuestaSeleccionada": "a"
+            },
+            {
+                "question": "\u00bfLa persona que le ha atendido ha comprendido sus necesidades?",
+                "answers": {
+                    "a": "S\u00ed",
+                    "b": "No",
+                    "c": "S\u00ed",
+                    "d": "No"
+                },
+                "level": 4,
+                "respuestaSeleccionada": "a"
+            },
+            {
+                "question": "\u00bfCuan probable es que vuelva a utilizar nuestros servicios o productos?",
+                "answers": {
+                    "a": "S\u00ed",
+                    "b": "No",
+                    "c": "S\u00ed",
+                    "d": "No"
+                },
+                "level": 3,
+                "respuestaSeleccionada": "a"
+            },
+            {
+                "question": "\u00bfCu\u00e1l es la calidad de la informaci\u00f3n sobre nuestros productos?",
+                "answers": {
+                    "a": "S\u00ed",
+                    "b": "No",
+                    "c": "S\u00ed",
+                    "d": "No"
+                },
+                "level": 5,
+                "respuestaSeleccionada": "a"
+            },
+            {
+                "question": "\u00bfQu\u00e9 le ha parecido la relaci\u00f3n entre la calidad ofrecida y el precio?",
+                "answers": {
+                    "a": "S\u00ed",
+                    "b": "No",
+                    "c": "S\u00ed",
+                    "d": "No"
+                },
+                "level": 5,
+                "respuestaSeleccionada": "a"
+            },
+            {
+                "question": "Si piensa en productos o servicios parecidos, \u00bfqu\u00e9 nota le pondr\u00eda a nuestra marca?",
+                "answers": {
+                    "a": "S\u00ed",
+                    "b": "No",
+                    "c": "S\u00ed",
+                    "d": "No"
+                },
+                "level": 2,
+                "respuestaSeleccionada": "a"
+            },
+            {
+                "question": "\u00bfHa tenido alg\u00fan problema en el proceso de compra?",
+                "answers": {
+                    "a": "S\u00ed",
+                    "b": "No",
+                    "c": "S\u00ed",
+                    "d": "No"
+                },
+                "level": 1,
+                "respuestaSeleccionada": "a"
+            }
+        ]
+    },
+    {
+        "nombre": "walt",
+        "id": 15597,
+        "tipo": "bawr",
+        "encuestaRealizada": [
+            {
+                "question": "\u00bfQue tan satisfecho se encuentra de la empresa en general?",
+                "answers": {
+                    "a": "S\u00ed",
+                    "b": "No",
+                    "c": "S\u00ed",
+                    "d": "No"
+                },
+                "level": 2,
+                "respuestaSeleccionada": "a"
+            },
+            {
+                "question": "\u00bfCual es su opini\u00f3n respecto a la limpieza del local?",
+                "answers": {
+                    "a": "S\u00ed",
+                    "b": "No",
+                    "c": "S\u00ed",
+                    "d": "No"
+                },
+                "level": 3,
+                "respuestaSeleccionada": "a"
+            },
+            {
+                "question": "\u00bfCuan probable es que se recomiende nuestros productos?",
+                "answers": {
+                    "a": "si",
+                    "b": "no"
+                },
+                "level": 3,
+                "respuestaSeleccionada": "z"
+            },
+            {
+                "question": "\u00bfComo calificarias la calidad de atenci\u00f3n de nuestros trabajadores para resolver sus dudas?",
+                "answers": {
+                    "a": "S\u00ed",
+                    "b": "No",
+                    "c": "S\u00ed",
+                    "d": "No"
+                },
+                "level": 4,
+                "respuestaSeleccionada": "d"
+            },
+            {
+                "question": "\u00bfLa persona que le ha atendido ha comprendido sus necesidades?",
+                "answers": {
+                    "a": "S\u00ed",
+                    "b": "No",
+                    "c": "S\u00ed",
+                    "d": "No"
+                },
+                "level": 4,
+                "respuestaSeleccionada": "d"
+            },
+            {
+                "question": "\u00bfCuan probable es que vuelva a utilizar nuestros servicios o productos?",
+                "answers": {
+                    "a": "S\u00ed",
+                    "b": "No",
+                    "c": "S\u00ed",
+                    "d": "No"
+                },
+                "level": 3,
+                "respuestaSeleccionada": "d"
+            },
+            {
+                "question": "\u00bfCu\u00e1l es la calidad de la informaci\u00f3n sobre nuestros productos?",
+                "answers": {
+                    "a": "S\u00ed",
+                    "b": "No",
+                    "c": "S\u00ed",
+                    "d": "No"
+                },
+                "level": 5,
+                "respuestaSeleccionada": "d"
+            },
+            {
+                "question": "\u00bfQu\u00e9 le ha parecido la relaci\u00f3n entre la calidad ofrecida y el precio?",
+                "answers": {
+                    "a": "S\u00ed",
+                    "b": "No",
+                    "c": "S\u00ed",
+                    "d": "No"
+                },
+                "level": 5,
+                "respuestaSeleccionada": "d"
+            },
+            {
+                "question": "Si piensa en productos o servicios parecidos, \u00bfqu\u00e9 nota le pondr\u00eda a nuestra marca?",
+                "answers": {
+                    "a": "S\u00ed",
+                    "b": "No",
+                    "c": "S\u00ed",
+                    "d": "No"
+                },
+                "level": 2,
+                "respuestaSeleccionada": "d"
+            },
+            {
+                "question": "\u00bfHa tenido alg\u00fan problema en el proceso de compra?",
+                "answers": {
+                    "a": "S\u00ed",
+                    "b": "No",
+                    "c": "S\u00ed",
+                    "d": "No"
+                },
+                "level": 1,
+                "respuestaSeleccionada": "d"
+            }
+        ]
     }
 ]

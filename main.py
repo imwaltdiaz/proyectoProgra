@@ -96,7 +96,9 @@ def resolverEncuesta(nombre,codigoCliente):
 
   for i in range(len(data)):
     print(data[i]["question"])
-    print(data[i]["answers"])
+    for key, items in (data[i]["answers"].items()): 
+      print (key + ". " +  items)
+      
     rspt = str(input("Ingrese respuesta: "))
     data[i]["respuestaSeleccionada"] = rspt
 
